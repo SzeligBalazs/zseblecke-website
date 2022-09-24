@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111222;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #111222;
+    padding: 1rem;
+    flex-direction: row;
+    z-index: 1;
+}
+
+nav img {
+    width: 3%;
+}
+
+nav .nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 6%;
+}
+
+nav .nav-row a {
+    margin-left: 3%;
+    margin-right: 5%;
+    color: #fafafa;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#welcome {
+    width: 90%;
+    height: 22em;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5em;
+    text-align: center;
+    animation: intro 1s ease-in-out;
+    background: url('../assets/zseblecke-feature-cover-bigger.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50px;
+    position: relative;
+    border: 10px solid #111222;
+}
+
+
+
+#welcome h1, .subtitle {
+    color: #eee;
+    background: #111222;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 15px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#welcome h6 {
+    background: #111222;
+    opacity: 0.9;
+    padding: 1%;
+    margin-top: 2%;
+    border-radius: 15px;
+    font-size: 0.6em;
+}
+
+#about {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    font-size: 2em;
+    overflow: hidden;
+}
+
+#about .row {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+#about .row h1 {
+    color: #fafafa;
+    background: #111222;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 15px;
+    font-size: 1.6em;
+}
+
+#about .row p {
+    color: #111222;
+    font-size: 0.8em;
+    width: 80%;
+}
+
+#about a {
+    color: #fafafa;
+    background: #111222;
+    font-size: 1.1em;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+#about .row img {
+    width: 20%;
+    height: 30%;
+}
+
+#about .row .column {
+    width: 100%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+#about .row .column .title-smaller {
+    width: 100%;
+    height: 10%;
+    font-size: 1em;
+    color: #eee;
+    background: #111222;
+    padding: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
+
+#about .row .column .line {
+    width: 5%;
+    height: 100%;
+    background: #111222;
+    border-radius: 25px;
+}
+
+#about .row .column p {
+    color: #111222;
+    font-size: 0.7em;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#downloads {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#downloads .row {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+    margin-top: 1%;
+    text-align: center;
+}
+
+#downloads .row h1 {
+    color: #fafafa;
+    background: #111222;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 15px;
+    font-size: 1.6em;
+}
+
+#downloads .row p {
+    color: #111222;
+    font-size: 0.8em;
+}
+
+#downloads .row img {
+    width: 20%;
+    height: auto;
+}
+
+#downloads .row .column {
+    width: 100%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+#downloads .row a img {
+    width: 30%;
+    height: 100%;
+}
+
+#downloads .row .column .title-smaller {
+    width: 100%;
+    min-height: 10%;
+    font-size: 1em;
+    color: #eee;
+    background: #111222;
+    padding: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
+
+#downloads .row .column p {
+    color: #111222;
+    font-size: 0.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #111222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    color: #fafafa;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow: hidden;
+}
+
+
+footer h1 {
+    font-size: 1.1em;
+    color: #fafafa;
+}
+
+footer h4 {
+    margin-top: 1%;
+    color: #fafafa;
+    font-size: 0.85em;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 12px;
+}
+
+footer a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+@keyframes intro {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background: #111222;
+            padding: 1rem;
+            flex-direction: row;
+            z-index: 1;
+        }
+    
+        nav img {
+            width: 8%;
+            height: 100%;
+        }
+    
+        nav .nav-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 12%;
+        }
+    
+        nav .nav-row a {
+            margin-left: 3%;
+            margin-right: 5%;
+            color: #fafafa;
+            text-align: right;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        #welcome {
+            width: 90%;
+            height: 88vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.75em;
+            text-align: center;
+            animation: intro 1s ease-in-out;
+            z-index: 1;
+        }
+
+        .bg-color {
+            width: 100%;
+            height: 10%;
+            background: #ffe400;
+            z-index: 0;
+            position: absolute;
+        }
+    
+        .bg-image {
+            width: 100%;
+            height: 88vh;
+            background: url('../assets/zseblecke-feature-cover-bigger.png') no-repeat center center;
+            background-size: cover;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            position: absolute;
+            top: 9%;
+        }
+    
+        #welcome h1,
+        .subtitle {
+            
+            color: #eee;
+            background: #111222;
+            padding: 1%;
+            margin-top: 1%;
+            border-radius: 15px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10%;
+        }
+
+        .subtitle {
+            color: #eee;
+            background: #111222;
+            font-size: 0.8em;
+        }
+    
+        #welcome h6 {
+            background: #111222;
+            opacity: 0.9;
+            padding: 2%;
+            margin-top: 10%;
+            border-radius: 15px;
+            font-size: 0.6em;
+        }
+    
+        #about {
+            width: 100%;
+            height: 100%;
+            padding: 5%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            font-size: 1.35em;
+            overflow: hidden;
+        }
+    
+        #about .row {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: row;
+            margin-top: 1%;
+        }
+    
+        #about .row h1 {
+            color: #fafafa;
+            background: #111222;
+            padding: 1%;
+            margin-top: 1%;
+            border-radius: 15px;
+            font-size: 1.6em;
+        }
+    
+        #about .row p {
+            color: #111222;
+            font-size: 0.8em;
+            width: 80%;
+        }
+
+        #about a {
+            color: #fafafa;
+            background: #111222;
+            font-size: 1em;
+            margin-top: 5%;
+            padding: 3%;
+            border-radius: 15px;
+        }
+    
+        #about .row img {
+            width: 20%;
+            height: auto;
+            display: none;
+        }
+    
+        #about .row .column {
+            width: 100%;
+            padding-right: 2%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+        }
+    
+        #about .row .column .title-smaller {
+            width: 100%;
+            height: 10%;
+            font-size: 1em;
+            color: #eee;
+            background: #111222;
+            padding: 2%;
+            margin-top: 1%;
+            margin-right: 1%;
+            margin-bottom: 5%;
+            border-radius: 15px;
+        }
+    
+        #about .row .column p {
+            color: #111222;
+            font-size: 0.8em;
+            width: 80%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #downloads {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 2em;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    
+        #downloads .row {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: row;
+            margin-top: 1%;
+            text-align: center;
+        }
+    
+        #downloads .row h1 {
+            color: #fafafa;
+            background: #111222;
+            padding: 1%;
+            margin-top: 1%;
+            border-radius: 15px;
+            font-size: 1.6em;
+        }
+    
+        #downloads .row p {
+            color: #111222;
+            font-size: 0.8em;
+        }
+    
+        #downloads .row img {
+            width: 20%;
+            height: auto;
+        }
+    
+        #downloads .row .column {
+            width: 100%;
+            padding-right: 2%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+        }
+    
+        #downloads .row a img {
+            width: 70%;
+            height: 100%;
+        }
+    
+        #downloads .row .column .title-smaller {
+            width: 100%;
+            min-height: 10%;
+            font-size: 1em;
+            color: #eee;
+            background: #111222;
+            padding: 1%;
+            margin-top: 1%;
+            margin-right: 1%;
+            margin-bottom: 5%;
+            border-radius: 15px;
+        }
+    
+        #downloads .row .column p {
+            color: #111222;
+            font-size: 0.7em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+                footer {
+                    width: 100%;
+                    height: auto;
+                    background: #111222;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    font-size: 1.5em;
+                    color: #fafafa;
+                    padding-top: 1%;
+                    padding-bottom: 1%;
+                    overflow: hidden;
+                }
+        
+        
+                footer h1 {
+                    font-size: 1.1em;
+                    color: #fafafa;
+                }
+        
+                footer h4 {
+                    margin-top: 1%;
+                    color: #fafafa;
+                    font-size: 0.85em;
+                }
+        
+                footer ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    padding: 12px;
+                }
+        
+                footer a {
+                    color: #fafafa;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                }
+    
+}
